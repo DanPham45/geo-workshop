@@ -37,4 +37,4 @@ data
 
 ## Start Jupyter Notebook
 
-docker run -it --rm -e JUPYTER_ENABLE_LAB=yes -p 8888:8888 -v `pwd`/work:/home/jovyan/work georesearch
+docker run -it --rm -e JUPYTER_ENABLE_LAB=yes -p 8888:8888 -v \`pwd\`/work:/home/jovyan/work georesearch
