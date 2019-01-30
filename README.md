@@ -5,7 +5,7 @@ mkdir geo-workshop
 
 cd geo-workshop
 
-## Download census data from Stats Canada. Move unzip it to data folder
+## Download census data from Stats Canada. Unzip it to data folder
 https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/details/download-telecharger/comp/page_dl-tc.cfm?Lang=E
 
 ## Install Docker
@@ -25,7 +25,7 @@ vi .dockerignore
 data
 
 ## Build image
-docker build -t georesearch .
+docker build --build-arg HTTP_PROXY=$HTTP_PROXY --build-arg HTTPS_PROXY=$HTTPS_PROXY -t georesearch .
 
 ## Start Jupyter Notebook
-docker run -it --rm -p 8888:8888 -v `pwd`:/home/jovyan/work georesearch
+docker run -it --rm -e JUPYTER_ENABLE_LAB=yes -p 8888:8888 -v `pwd`:/home/jovyan/work georesearch
