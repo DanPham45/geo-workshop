@@ -2,6 +2,7 @@
 
 ## Start by creating a new folder
 mkdir geo-workshop
+
 cd geo-workshop
 
 ## Download census data from Stats Canada. Move unzip it to data folder
@@ -15,10 +16,12 @@ docker pull jupyter/scipy-notebook
 
 ## Create Dockerfile
 FROM jupyter/scipy-notebook
+
 RUN pip install folium
 
 ## Add .dockerignore to skip data folder during build
 vi .dockerignore
+
 data
 
 ## Build image
