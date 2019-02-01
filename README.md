@@ -1,6 +1,5 @@
 # Prerequisites
-## Install Docker
-https://www.docker.com/get-started
+Install Docker https://www.docker.com/get-started
 
 # Instructions
 1. Start by creating a new folder
