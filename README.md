@@ -26,16 +26,16 @@ https://www.docker.com/get-started
 
 1. Prepare input data
     1. Create entry folders
-      ```bash
-      mkdir work
-      mkdir work/data
-      ```
+          ```bash
+          mkdir work
+          mkdir work/data
+          ```
 
     1. Download census data from Stats Canada. Unzip it to work/data folder
-      1. 2016 Census
-    https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/details/download-telecharger/comp/page_dl-tc.cfm?Lang=E
-      1. Boundary files
-    https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2016-eng.cfm
+          - 2016 Census
+        https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/details/download-telecharger/comp/page_dl-tc.cfm?Lang=E
+          - Boundary files
+        https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2016-eng.cfm
 
 1. (Optional) Add .dockerignore to skip data folder
 
