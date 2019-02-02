@@ -42,3 +42,7 @@ Install Docker https://www.docker.com/get-started
   ```
   docker run -it --rm -e JUPYTER_ENABLE_LAB=yes -p 8888:8888 -v \`pwd\`/work:/home/jovyan/work georesearch
   ```
+
+# Open Data
+- Government of Canada: https://open.canada.ca/data/en/dataset?portal_type=dataset
+- Toronto: https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/
